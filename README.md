@@ -3,7 +3,7 @@
 To get this to work, you have to:
 - Clone this repo locally
 - Have a working Instapaper API key
-- Create a .env file in the root of the project with the following variables:
+- Create a `.env` file in the root of the project with the following variables:
 ```
 CONSUMER_KEY='key'
 CONSUMER_SECRET='secret'
@@ -12,6 +12,7 @@ PASSWORD='password'
 ```
 - `npm install`
 - `npm run`
+
 - Currently returns highlights as an array grouped by bookmark, with the following info:
 ```
 {
@@ -25,7 +26,6 @@ PASSWORD='password'
 # Instapaper API Info
 
 - Docs available here: https://www.instapaper.com/api/full
-- (Although found docs to be somewhat lacking).
 
 Instapaper data available on each bookmark:
 ```

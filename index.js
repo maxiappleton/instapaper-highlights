@@ -2,6 +2,14 @@ const Instapaper = require('./instapaper');
 require('dotenv').config()
 
 async function run() {
+  if (
+    !process.env.CONSUMER_KEY || !process.env.CONSUMER_SECRET ||
+    !process.env.USERNAME || !process.env.PASSWORD
+  ) {
+    console.log('Did you forget to setup your .env file? Check the README');
+    process.exit(0);
+  }
+
   try {
     const client = new Instapaper(process.env.CONSUMER_KEY, process.env.CONSUMER_SECRET);
     client.setUserCredentials(process.env.USERNAME, process.env.PASSWORD)
