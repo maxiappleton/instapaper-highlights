@@ -1,4 +1,4 @@
-#Quick and Dirty Instapaper Highlights API Access
+# Quick and Dirty Instapaper Highlights API Access
 
 To get this to work, you have to:
 - Clone this repo locally
@@ -22,7 +22,7 @@ PASSWORD='password'
 ```
 (But that can easily be changed, just look at the return result of `fetchAllHighlights`)
 
-#Instapaper API Info
+# Instapaper API Info
 
 - Docs available here: https://www.instapaper.com/api/full
 - (Although found docs to be somewhat lacking).
